@@ -1,0 +1,298 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #666;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    background: #555;
+}
+
+/* About and Contact Section */
+.about, .contact {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Products Section */
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%; /* Full width for mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Contact Form */
+    .contact form {
+        width: 100%; /* Ensure full width on small devices */
+    }
+}
+/* General Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    position: relative;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile-Specific Header */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav {
+        position: absolute;
+        top: 60px; /* Dưới logo */
+        right: 0;
+        background: #333;
+        width: 100%;
+        display: none; /* Ẩn menu mặc định */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav.active {
+        display: flex; /* Hiển thị menu khi nhấn */
+    }
+}
+/* Nút menu hamburger */
+.menu-toggle {
+    display: none; /* Mặc định ẩn trên desktop */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Hiển thị nút menu toggle trên màn hình nhỏ */
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        display: none; /* Ẩn menu mặc định */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.active {
+        display: flex; /* Hiển thị menu khi thêm lớp active */
+    }
+}

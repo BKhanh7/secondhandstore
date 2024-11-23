@@ -145,12 +145,12 @@ footer {
 @media (max-width: 768px) {
     /* Header */
     header {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
     header nav ul {
-        flex-direction: column;
+        flex-direction: row;
         padding: 10px 0;
     }
 

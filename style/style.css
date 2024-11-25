@@ -1,3 +1,4 @@
+
 /* General Reset */
 body {
     margin: 0;
@@ -13,7 +14,6 @@ body {
     background: #3a3939;
     color: rgb(255, 255, 255);
 }
-
 header .logo {
     font-size: 24px;
     font-weight: bold;
@@ -38,27 +38,52 @@ header nav ul li a {
 header nav ul li a:hover {
     text-decoration: underline;
 }
-
+.nav-item:hover {
+    background-color: #6a6d6d2c; /* Xanh đậm hơn */
+    transform: scale(1.2); /* Phóng to nhẹ */
+}
 /* Hero Section */
 .hero {
+    color:rgb(253, 246, 246);
     text-align: center;
     font-weight: bold;
     text-shadow: 
-    1px 1px 2px #aaaaaa,
-    -1px -1px 2px #615b5b79;
+        3px 2px 2px #000000,
+        -1px -1px 2px #000000f6;
     padding: 70px 50px;
-     background-image: url('https://hinhanhdephd.com/wp-content/uploads/2019/12/background-tet-dep-nhat-lam-hinh-nen-dep-10.jpg');
+    
+    /* Slideshow Animation */
+    animation: slideShow 7s infinite;
+
+    /* Background Setup */
     background-size: cover;
     background-repeat: repeat;
-    background-position: top;
+    background-position: center;
 }
+
+/* Keyframes cho hiệu ứng slideshow */
+@keyframes slideShow {
+    0% {
+        background-image: url('https://hinhanhdephd.com/wp-content/uploads/2019/12/background-tet-dep-nhat-lam-hinh-nen-dep-10.jpg');
+    }
+    50% {
+        background-image: url('https://img.lovepik.com/background/20211021/large/lovepik-the-background-of-the-poster-of-the-spring-image_400095684.jpg');
+    }
+    75% {
+        background-image: url('https://treobangron.com.vn/wp-content/uploads/2022/09/background-tet-nguyen-dan-8-1.jpg');
+    }
+    100% {
+        background-image: url('https://hcmut.edu.vn/img/carouselItem/36986508.jpeg?t=36986508');
+    }
+}
+
 
 .hero h1 {
     margin-bottom: 10px;
 }
 
 .hero p {
-    color: #666;
+    color: #ffffff;
 }
 
 /* Products Section */
@@ -70,6 +95,8 @@ header nav ul li a:hover {
 
 .products h2 {
     margin-bottom: 10px;
+
+    text-size-adjust : 10px;
 }
 
 .product-grid {
@@ -94,17 +121,31 @@ header nav ul li a:hover {
 }
 
 .product-card button {
+    margin-top: 7px;
+    padding: 7px;
+    background: #3d2a2a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.Cart  {
     margin-top: 10px;
-    padding: 10px;
+    padding: 0px;
     background: #333;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
+.Cart:hover {
+    background-color: #36599900; /* Xanh đậm hơn */
+    transform: scale(1.2); /* Phóng to nhẹ */
+}
 
 .product-card button:hover {
-    background: #555;
+    background-color: #212025; /* Xanh đậm hơn */
+    transform: scale(1.2); /* Phóng to nhẹ */
 }
 
 /* About and Contact Section */
@@ -112,6 +153,18 @@ header nav ul li a:hover {
     padding: 20px;
     background: #f4f4f4;
     text-align: center;
+}
+/* Nút Facebook */
+.facebook-button {
+    width: 30px; /* Chiều rộng 100% container */
+    height: 30px; /* Giữ tỷ lệ */
+    max-width: 400px; /* Không vượt quá kích thước gốc */
+}
+
+/* Hiệu ứng khi rê chuột */
+.facebook-button:hover {
+    background-color: #36599900; /* Xanh đậm hơn */
+    transform: scale(1.1); /* Phóng to nhẹ */
 }
 
 .contact form {

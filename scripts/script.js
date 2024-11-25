@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".product-card button");
     buttons.forEach((button) => {
         button.addEventListener("click", () => {
-            alert("Added to cart!");
+            alert("Đã thêm vào giỏ hàng!");
         });
     });
 });

@@ -1,0 +1,177 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #666;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    background: #555;
+}
+
+/* About and Contact Section */
+.about, .contact {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+
+
+/* General Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bg-customs{
+    color: white;
+}
+.mar{
+    margin-left: 50px;
+}
+.home:link {
+    color: green;
+  }
+.pad{
+    padding-right: 20px;
+    padding-left: 0px;
+}
+.cart img{
+    height: 30px;
+    border-radius:15%;
+}

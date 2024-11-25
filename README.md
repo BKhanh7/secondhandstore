@@ -1,2 +1,0 @@
-Secondhand - store
-# secondhandstore

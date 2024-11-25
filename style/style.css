@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    
 }
 
 /* Header */
@@ -42,8 +43,11 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 50px 20px;
-    background: #f4f4f4;
+    padding: 70px 50px;
+     background-image: url('https://hinhanhdephd.com/wp-content/uploads/2019/12/background-tet-dep-nhat-lam-hinh-nen-dep-10.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
 }
 
 .hero h1 {
@@ -56,13 +60,13 @@ header nav ul li a:hover {
 
 /* Products Section */
 .products {
-    padding: 20px;
-    background: #fff;
+    padding: 10px;
+    background: #c2e9ebe8;
     text-align: center;
 }
 
 .products h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .product-grid {
@@ -73,12 +77,12 @@ header nav ul li a:hover {
 }
 
 .product-card {
-    border: 1px solid #ddd;
+    border: 1px solid #020101;
     padding: 10px;
     width: 170px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
 }
 
 .product-card img {
